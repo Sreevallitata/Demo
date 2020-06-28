@@ -10,6 +10,8 @@ import { HomeComponent } from './home/home.component';
 import { ProteinComponent } from './Protein/protein.component';
 // @ts-ignore
 import {HttpClientModule} from '@angular/common/http';
+import {MacrosComponent} from "./Macros/macros.component";
+import {cheatsheetComponent} from "./cheatsheet/cheatsheet.component";
 
 // @ts-ignore
 @NgModule({
@@ -17,7 +19,9 @@ import {HttpClientModule} from '@angular/common/http';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    ProteinComponent
+    ProteinComponent,
+    MacrosComponent,
+    cheatsheetComponent
   ],
   imports: [
     BrowserModule,

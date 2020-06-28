@@ -1,0 +1,98 @@
+<div class="image2">
+
+  <div class="parent-container">
+    <div class="child-container">
+      <h2><b><strong>Search for your Protein!!
+      </strong></b></h2><br>
+      <form>
+        <div class="form-group">
+          <h1>Select here</h1>
+
+          <form action="/action_page.php">
+            <input type="checkbox" id="Whey Protein Powder" >
+            <label for="Whey Protein Powder"> Whey Protein Powder</label><br>
+            <input type="checkbox" id="Plant-based Protein Powder" >
+            <label for="Plant-based Protein Powder"> Plant-based Protein Powder</label><br>
+            <input type="checkbox" id="Protein Bars" >
+            <label for="Protein Bars"> Protein Bars</label><br><br>
+          </form>
+
+
+          <br>
+          <button (click)="getVenues()" class="btn btn primary col-lg-2 col-lg-offset-5 " type="button">Go ! </button>
+
+        </div>
+      </form>
+    </div>
+  </div><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="panel panel-default col-6">
+          <div class="panel-heading"><b>Product Type</b></div>
+          <div class="panel-body">
+            <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
+              <div class="pull-left">
+                <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+                <a href="{{recipe.url}}" class="list-group-item-text">{{ recipe.url }}</a>
+              </div>
+
+              <span class="pull-right">
+          <img src="{{recipe.icon}}" style="width: 70px; height: 50px;" align="center"/>
+
+      </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+      <div class="col-lg-6">
+        <div class="panel panel-default col-6">
+          <div class="panel-heading"><b>Ingredients</b></div>
+          <div class="panel-body">
+
+            <div *ngFor="let venue of venueList" class="list-group-item clearfix">
+              <div class="pull-left">
+                <h4 class="list-group-item-heading">{{ venue.name }}</h4>
+              </div>
+
+            </div>
+            <div class="container">
+              <div class="row">
+            <div class="col-lg-6">
+              <div class="panel panel-default col-6">
+            <div class="panel-heading"><b>Nutritional Values</b></div>
+            <div class="panel-body">
+              <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
+                <div class="pull-left">
+                  <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+                  <a href="{{recipe.url}}" class="list-group-item-text">{{ recipe.url }}</a>
+                </div>
+
+                <span class="pull-right">
+          <img src="{{recipe.icon}}" style="width: 70px; height: 50px;" align="center"/>
+
+      </span>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+      </div>
+    </div>
+
+
+</div>
+    </div>
+  </div>
+</div>

@@ -27,8 +27,8 @@
   </div><br><br>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
-        <div class="panel panel-default col-6">
+      <div class="col-lg-4">
+        <div class="panel panel-default col">
           <div class="panel-heading"><b>Product Type</b></div>
           <div class="panel-body">
             <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
@@ -48,9 +48,10 @@
         </div>
       </div>
       <div class="container">
+
         <div class="row">
-      <div class="col-lg-6">
-        <div class="panel panel-default col-6">
+      <div class="col-lg-4">
+        <div class="panel panel-default col">
           <div class="panel-heading"><b>Ingredients</b></div>
           <div class="panel-body">
 
@@ -58,37 +59,38 @@
               <div class="pull-left">
                 <h4 class="list-group-item-heading">{{ venue.name }}</h4>
               </div>
-
             </div>
-            <div class="container">
-              <div class="row">
-            <div class="col-lg-6">
-              <div class="panel panel-default col-6">
-            <div class="panel-heading"><b>Nutritional Values</b></div>
-            <div class="panel-body">
-              <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
-                <div class="pull-left">
-                  <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
-                  <a href="{{recipe.url}}" class="list-group-item-text">{{ recipe.url }}</a>
-                </div>
+            </div>
+<!--            <div class="container">-->
+<!--              <div class="row">-->
 
-                <span class="pull-right">
+<!--    </div>-->
+<!--  </div>-->
+
+</div>
+      </div>
+          <div class="col-lg-4">
+            <div class="panel panel-default col">
+              <div class="panel-heading"><b>Nutritional Values</b></div>
+              <div class="panel-body">
+                <div *ngFor="let recipe of recipeList" class="list-group-item clearfix">
+                  <div class="pull-left">
+                    <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+                    <a href="{{recipe.url}}" class="list-group-item-text">{{ recipe.url }}</a>
+                  </div>
+
+                  <span class="pull-right">
           <img src="{{recipe.icon}}" style="width: 70px; height: 50px;" align="center"/>
 
       </span>
 
+
+
+                </div>
               </div>
 
             </div>
           </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
-      </div>
     </div>
 
 

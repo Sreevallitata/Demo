@@ -25,8 +25,8 @@ export class ProteinComponent implements OnInit {
   constructor(private _http: HttpClient) {
   }
 
-  ngOnInit(): void {
-        throw new Error("Method not implemented.");
+  ngOnInit() {
+        // throw new Error("Method not implemented.");
     }
 
 

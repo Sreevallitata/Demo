@@ -9,8 +9,8 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./macros.component.css']
 })
 export class MacrosComponent implements OnInit {
-    ngOnInit(): void {
-        throw new Error("Method not implemented.");
+    ngOnInit() {
+        // throw new Error("Method not implemented.");
     }
   @ViewChild('recipe') recipes: ElementRef;
   @ViewChild('place') places: ElementRef;
